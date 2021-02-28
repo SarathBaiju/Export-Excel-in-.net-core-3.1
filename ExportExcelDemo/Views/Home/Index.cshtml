@@ -1,0 +1,24 @@
+﻿@model List<ExportExcelDemo.Controllers.User>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Users</h1>
+    <table class="table">
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+            </tr>
+        }
+    </table>
+   
+    <button>@Html.ActionLink("Export as Excel", "ExportExcel")</button>
+</div>

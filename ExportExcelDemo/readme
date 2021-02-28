@@ -1,0 +1,4 @@
+1. This is project build in .net core 3.1 (mvc template)
+2. Project only focus on exporting excel file functionality
+3. The data now inserted to the excel is mocked inside the code.
+4. For generating excel ClosedXML nuget package is used.
